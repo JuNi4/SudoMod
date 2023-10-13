@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sudo",
+	"version": "${version}",
+	"name": "Sudo",
+	"description": "A Mod adding the sudo command to minecraft as a joke",
+	"authors": [
+		"JuNi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sudo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.juni.sudo.Sudo"
+		],
+		"client": [
+			"com.juni.sudo.SudoClient"
+		],
+		"fabric-datagen": [
+			"com.juni.sudo.SudoDataGenerator"
+		]
+	},
+	"mixins": [
+		"sudo.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
