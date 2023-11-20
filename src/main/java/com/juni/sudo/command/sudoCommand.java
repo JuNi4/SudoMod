@@ -18,7 +18,7 @@ public class sudoCommand {
 
     //// Changing Variables ////
     // variable for storing all installed packages
-    public static String[] pre_installed = {"minecraft","fabric"};
+    public static String[] pre_installed = {"minecraft","fabric","sudo","doas","apt","tree"};
     public static ArrayList<String> installed_packages = new ArrayList<>(Arrays.stream(pre_installed).toList());
     // variable for storing the selected package repository
     public static int selected_repo = 0;
