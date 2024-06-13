@@ -6,18 +6,22 @@ A Minecraft mod that adds a little command from linux called sudo.
 
 ## Usage:
 ```
-# pretends to install a package
-/sudo apt install <package name>
-# pretends to remove a package
-/sudo apt remove <package name>
+# pretends to install a package (requires root)
+/$ sudo apt-get install <package name>
+# pretends to remove a package (requires root)
+/$ sudo apt-get remove <package name>
 # lists all installed packages
-/sudo apt list
+/$ apt-get list
 
-# set the package repo (none = no packages being installable, dev = sometimes, default = all)
-/sudo add-apt-repository [none/dev/default]
+# set the package repo (none = no packages being installable, dev = sometimes, default = all) (requires root)
+/$ sudo add-apt-repository [none/dev/default]
+# updates the database of available packages (requires root)
+/$ sudo apt update
 
 # prints a directory tree
-/sudo tree
-```
+/$ tree
 
-The sudo alternatives `doas` are supported now to. 
+# prints information about the system
+/$ neofetch
+```
+ 
